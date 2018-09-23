@@ -14,28 +14,28 @@
     <!-- Custom styles for this template -->
     <link href="css/carousel.css" rel="stylesheet">
 </head>
-<body>
+<body id="top">
 
 <header>
     <nav class="navbar navbar-expand-md navbar-light fixed-top bg-ligh" style="background-color: #e3f2fd;">
-        <a class="navbar-brand" href="#" style="color: blue">MINDFULLY YOU</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+        <a class="navbar-brand" href="#myCarousel" style="color: blue">MINDFULLY YOU</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar"
                 aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
                     <a class="nav-link" href="#courses">Courses</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">About Nina</a>
+                    <a class="nav-link" href="#about">About Nina</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" href="#contact">Contact</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">More On Mindfulness</a>
+                    <a class="nav-link" href="#more">More On Mindfulness</a>
                 </li>
             </ul>
         </div>
@@ -106,7 +106,7 @@
 
         <!-- START THE FEATURETTES -->
 
-        <div id="courses" class="row featurette">
+        <div id="courses" class="row featurette" style="padding-top:50px;">
             <div class="col-md-10">
                 <h2 class="featurette-heading">Mindfulness Courses &amp; Sessions</h2>
                 <p>Whether you would like to just find out more about Mindfulness or attend a formal course I have a
@@ -137,7 +137,7 @@
 
         <hr class="featurette-divider">
 
-        <div class="row featurette">
+        <div id="about" class="row featurette" style="padding-top:50px;">
             <div class="col-md-7 order-md-2">
                 <h2 class="featurette-heading">About Nina</h2>
                 <p class="lead">I am a thingy qualified Mindfulness Teacher blah blah </p>
@@ -150,12 +150,32 @@
 
         <hr class="featurette-divider">
 
-        <div class="row featurette">
+        <div id = "contact" class="row featurette" style="padding-top:50px;">
             <div class="col-md-7">
                 <h2 class="featurette-heading">Contact Information</span></h2>
                 <p class="lead">If you would like further information about the any of the Mindfulness sessions or
                     courses please feel free to drop me an email. </p>
                 <a href="mailto:nxcolvin@gmail.com">nxcolvin@gmail.com</a>
+                <form name="contact" method="POST" netlify>
+                    <p>
+                        <label>Your Name: <input type="text" name="name" /></label>
+                    </p>
+                    <p>
+                        <label>Your Email: <input type="email" name="email" /></label>
+                    </p>
+                    <p>
+                        <label>Your Role: <select name="role[]" multiple>
+                            <option value="leader">Leader</option>
+                            <option value="follower">Follower</option>
+                        </select></label>
+                    </p>
+                    <p>
+                        <label>Message: <textarea name="message"></textarea></label>
+                    </p>
+                    <p>
+                        <button type="submit">Send</button>
+                    </p>
+                </form>
             </div>
             <div class="col-md-5">
                 <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto"
@@ -165,9 +185,9 @@
 
         <hr class="featurette-divider">
 
-        <div class="row featurette">
+        <div id="more" class="row featurette">
             <div class="col-md-7">
-                <h2 class="featurette-heading">More On Mindfulness</span></h2>
+                <h2  class="featurette-heading">More On Mindfulness</span></h2>
                 <p class="lead">More depth on mindfulness here. </p>
                 <a href="mailto:nxcolvin@gmail.com">nxcolvin@gmail.com</a>
             </div>
@@ -201,5 +221,21 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js"
         integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4"
         crossorigin="anonymous"></script>
+<script>
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+</script>
 </body>
 </html>
+
+<!--
+https://app.netlify.com/?_ga=2.185615785.1847727906.1537702940-1651041458.1537702940
+-->
