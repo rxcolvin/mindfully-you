@@ -1,0 +1,52 @@
+/* Any Size */
+
+
+nav-bar {
+    display: inline-flex;
+    height: 100px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+
+    nav-bar-branding {
+        height: 100%;
+        margin-left: 5%;
+
+        img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    nav-bar-burger {
+        display: none;
+    }
+
+    nav-bar-menu {
+        display: inline-flex;
+        margin-right: 10%;
+        column-gap: 20px;
+        font-family: "Roboto Slab", serif;
+        font-feature-settings: normal;
+        font-kerning: auto;
+        font-optical-sizing: auto;
+        font-size: 15px;
+        font-size-adjust: none;
+        font-stretch: 100%;
+        font-style: normal;
+
+        scroll-to {
+            display: block;
+        }
+    }
+}
+
+
+
+
+
+
+

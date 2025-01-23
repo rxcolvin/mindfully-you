@@ -1,0 +1,1119 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xml:lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Whatevs</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com ">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" media="screen and (max-width: 1200px)" href="css/navbar-dd-menu.css">
+    <style>
+        * {
+            margin: 0;
+        }
+
+    </style>
+    <style>
+        #navbar {
+            background-color: #e3f2fd;
+            box-shadow: 0px 15px 10px -15px;
+            nav-bar-menu {
+                scroll-to {
+                    color: cornflowerblue;
+                    font-family: Roboto Slab, serif;
+                    font-size: 16px;
+                    border-bottom-style: solid;
+                    border-bottom-width: 2px;
+                    border-color: cornflowerblue;
+                }
+
+                scroll-to:hover {
+                    color: blue;
+                    cursor: pointer;
+                    border-color: blue;
+                }
+            }
+
+            @media screen and (max-width: 1200px) {
+                nav-bar-menu {
+                    background-color: white;
+                    width: 100%;
+
+                    scroll-to {
+                        border-top-style: solid;
+                        border-top-width: 1px;
+                        border-bottom-style: solid;
+                        border-bottom-width: 1px;
+                        border-color: cornflowerblue;
+                        text-align: left;
+                        vertical-align: middle;
+                        margin-left: 0.5em;
+                        margin-right: 0.5em;
+                        margin-bottom: auto;
+                        margin-top: auto;
+                    }
+
+                }
+
+                nav-bar-burger {
+                    #nav-bar-burger-bar1, #nav-bar-burger-bar2, #nav-bar-burger-bar3 {
+                        width: 35px;
+                        height: 3px;
+                        background-color: cornflowerblue;
+                        margin: 8px 0;
+                        transition: 0.4s;
+                    }
+                }
+            }
+        }
+    </style>
+
+    <style> /* Style for id=general section  */
+
+    #general {
+        /* Large */
+        display: flex;
+        align-items: center;
+
+        .container {
+            margin: 0 auto;
+            overflow: auto;
+            text-align: center;
+            padding-left: 20%;
+            padding-right: 20%;
+
+            .title {
+                font-family: Roboto Slab, serif;
+                color: white;
+                font-size: 4em;
+                font-weight: 300;
+                font-optical-sizing: auto;
+                line-height: 1.1em;
+                letter-spacing: 1px;
+                text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+            }
+
+            .detail {
+                font-family: Roboto Slab, serif;
+                color: white;
+                font-size: 1.5em;
+                font-weight: 200;
+                font-optical-sizing: auto;
+                line-height: 1.2em;
+                letter-spacing: 1px;
+            }
+        }
+        /* Mobile */
+        @media screen and (max-width: 800px) {
+            .container {
+                padding-left: 5%;
+                padding-right: 5%;
+            }
+        }
+    }
+    </style>
+    <style>
+        #mindfulness {
+            display: block;
+            padding-top: 1.5%;
+            padding-bottom: 1.5%;
+            width: 70%;
+            margin: auto;
+
+            .row-1 {
+                padding-top: 3em;
+                padding-bottom: 3em;
+
+                .title {
+                    font-family: Roboto Slab, serif;
+                    color: cornflowerblue;
+                    font-size: 2em;
+                    font-weight: 400;
+                    font-optical-sizing: auto;
+                    line-height: 1.2em;
+                    letter-spacing: 1px;
+                    text-align: center;
+                }
+
+                .detail {
+                    font-family: Roboto Slab, serif;
+                    color: black;
+                    font-size: 1.3em;
+                    font-weight: 200;
+                    font-optical-sizing: auto;
+                    line-height: 1.2em;
+                    letter-spacing: 1px;
+                    margin-top: 0.5em;
+                    text-align: justify;
+                }
+
+                .divider {
+                    width: 35px;
+                    height: 3px;
+                    background-color: cornflowerblue;
+                    margin-left: auto;
+                    margin-right: auto;
+                    margin-top: 1em;
+                    margin-bottom: 1em;
+                }
+            }
+
+            .row-2 {
+                display: flex;
+                align-content: space-between;
+                padding-top: 1%;
+                margin-bottom: 1%;
+
+                .image {
+                    object-fit: cover;
+                    width: 100%;
+                    height: auto;
+                    border-radius: 3%;
+                }
+
+                .subtitle {
+                    font-family: Roboto Slab, serif;
+                    color: cornflowerblue;
+                    font-size: 1.3em;
+                    font-weight: 400;
+                    font-optical-sizing: auto;
+                    line-height: 1.2em;
+                    letter-spacing: 1px;
+                    margin-top: 2em;
+                    text-align: center;
+                }
+
+                .subdetail {
+                    font-family: Roboto Slab, serif;
+                    color: black;
+                    font-size: 1em;
+                    font-weight: 200;
+                    font-optical-sizing: auto;
+                    line-height: 1.2em;
+                    letter-spacing: 1px;
+                    margin-top: 1em;
+                    text-align: center;
+                }
+
+                .col-1, .col-2, .col-3 {
+                    display: flex;
+                    flex-direction: column;
+                    flex: 1 1 0;
+                }
+
+                .col-1 {
+                    margin-right: 1em;
+                }
+
+                .col-2 {
+                    margin-right: 1em;
+                    margin-left: 1em;
+                }
+
+                .col-3 {
+                    margin-left: 1em;
+                }
+            }
+
+            @media screen and (max-width: 800px) {
+                width: 90%;
+                .row-1 {
+                    padding-bottom: 1em;
+                }
+
+                .row-2 {
+                    flex-direction: column;
+
+                    .image {
+                        display: none;
+                    }
+
+                    .subtitle {
+                        margin-top: 1em;
+                    }
+                }
+            }
+        }
+    </style>
+    <style>
+        #present-moment {
+            display: block;
+            padding-top: 3%;
+            padding-bottom: 3%;
+            width: 100%;
+
+            .text {
+                font-family: Roboto Slab, serif;
+                color: white;
+                font-size: 3em;
+                font-weight: 300;
+                font-optical-sizing: auto;
+                line-height: 1.2em;
+                letter-spacing: 1px;
+                padding-left: 60%;
+                padding-right: 10%;
+                vertical-align: center;
+            }
+        }
+    </style>
+    <style>
+        #benefits {
+            display: block;
+            padding-top: 3%;
+            padding-bottom: 3%;
+            width: 70%;
+            margin: auto;
+
+            .row-1 {
+                display: flex;
+            }
+
+            .col-1, .col-2 {
+                display: flex;
+                flex-direction: column;
+                flex: 1 1 0;
+            }
+
+            .col-1 {
+                margin-right: 1em;
+
+                .image {
+                    object-fit: cover;
+                    width: 100%;
+                    height: auto;
+                    border-radius: 3%;
+                }
+            }
+
+            .col-2 {
+                margin-left: 1em;
+
+                .title {
+                    font-family: Roboto Slab, serif;
+                    color: cornflowerblue;
+                    font-size: 2em;
+                    font-weight: 300;
+                    font-optical-sizing: auto;
+                    line-height: 1.2em;
+                    letter-spacing: 1px;
+                    text-align: center;
+                }
+
+                .detail {
+                    font-family: Roboto Slab, serif;
+                    font-size: 1em;
+                    font-weight: 300;
+                    font-optical-sizing: auto;
+                    line-height: 1.2em;
+                    letter-spacing: 1px;
+                    padding-bottom: 0.5em;
+                    text-align: justify;
+                }
+
+                .list {
+                    padding-top: 0.5em;
+                }
+
+                .list > li {
+                    font-family: Roboto Slab, serif;
+                    font-size: 1em;
+                    font-weight: 300;
+                    font-optical-sizing: auto;
+                    line-height: 1.2em;
+                    letter-spacing: 1px;
+                    padding-bottom: 0.5em;
+                }
+
+                .divider {
+                    width: 35px;
+                    height: 3px;
+                    background-color: cornflowerblue;
+                    margin-left: auto;
+                    margin-right: auto;
+                    margin-top: 1em;
+                    margin-bottom: 1em;
+                }
+            }
+
+            @media screen and (max-width: 800px) {
+                width: 90%;
+                .row-1 {
+                    flex-direction: column;
+
+                    .col-1 {
+                        display: none;
+                    }
+                }
+            }
+
+        }
+    </style>
+    <style>
+        #indications {
+            padding-top: 3%;
+            padding-bottom: 3%;
+            display: block;
+
+            .container {
+                width: 70%;
+                margin-left: auto;
+                margin-right: auto;
+
+                h1 {
+                    font-family: Roboto Slab, serif;
+                    color: cornflowerblue;
+                    font-size: 2em;
+                    font-weight: 300;
+                    font-optical-sizing: auto;
+                    line-height: 1.2em;
+                    letter-spacing: 1px;
+                    text-align: center;
+                }
+
+                p {
+                    font-family: Roboto Slab, serif;
+                    font-size: 1em;
+                    font-weight: 300;
+                    font-optical-sizing: auto;
+                    line-height: 1.2em;
+                    letter-spacing: 1px;
+                    padding-bottom: 0.5em;
+                    text-align: justify;
+                }
+
+                .divider {
+                    width: 35px;
+                    height: 3px;
+                    background-color: cornflowerblue;
+                    margin-left: auto;
+                    margin-right: auto;
+                    margin-top: 1em;
+                    margin-bottom: 1em;
+                }
+            }
+
+            @media screen and (max-width: 800px) {
+                .container {
+                    width: 90%;
+                }
+            }
+        }
+    </style>
+    <style>
+        #buddha {
+            display: block;
+            padding-top: 3%;
+            padding-bottom: 3%;
+            background-color: cornflowerblue;
+
+            .container {
+                width: 70%;
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+
+                q {
+                    color: white;
+                    font-family: Roboto Slab, serif;
+                    font-size: 1.5em;
+                    font-weight: 300;
+                    font-optical-sizing: auto;
+                    line-height: 1.2em;
+                    letter-spacing: 1px;
+                    padding-bottom: 0.5em;
+                }
+
+                p > cite {
+                    color: white;
+                    font-family: Roboto Slab, serif;
+                    font-size: 0.75em;
+                    font-weight: 300;
+                    font-optical-sizing: auto;
+                    line-height: 1.2em;
+                    letter-spacing: 1px;
+                    padding-bottom: 0.5em;
+                }
+            }
+        }
+
+    </style>
+    <style>
+        #about {
+            display: block;
+            padding-top: 3%;
+            padding-bottom: 3%;
+            background-color: white;
+
+            .container {
+                width: 70%;
+                margin-left: auto;
+                margin-right: auto;
+
+                .row-1 {
+                    h1 {
+                        font-family: Roboto Slab, serif;
+                        color: cornflowerblue;
+                        font-size: 2em;
+                        font-weight: 300;
+                        font-optical-sizing: auto;
+                        line-height: 1.2em;
+                        letter-spacing: 1px;
+                        text-align: center;
+                    }
+
+                    .divider {
+                        width: 35px;
+                        height: 3px;
+                        background-color: cornflowerblue;
+                        margin-left: auto;
+                        margin-right: auto;
+                        margin-top: 1em;
+                        margin-bottom: 1em;
+                    }
+                }
+
+                .row-2 {
+                    display: flex;
+                    width: 100%;
+                    flex-direction: row;
+
+                    .col-1 {
+                        img {
+                            object-fit: cover;
+                            width: 100%;
+                            height: auto;
+                            border-radius: 3%;
+                        }
+
+                        padding-right: 2%;
+                        flex: 1 1 auto;
+                        min-width: 30%;
+                    }
+
+                    .col-2 {
+                        p {
+                            font-family: Roboto Slab, serif;
+                            font-size: 1em;
+                            font-weight: 300;
+                            font-optical-sizing: auto;
+                            line-height: 1.2em;
+                            letter-spacing: 1px;
+                            padding-bottom: 0.5em;
+                            text-align: justify;
+                        }
+
+                        padding-left: 2%;
+                        flex: 1 1 auto;
+                    }
+                }
+            }
+
+            @media screen and (max-width: 800px) {
+                .container {
+                    width: 90%;
+                    .row-2 {
+                        display: block;
+
+                        .col-1 {
+                            img {
+                                width: 30%;
+                                height: auto;
+                                float: left;
+                                margin: 0 20px 20px 0;
+                            }
+
+                        }
+
+                        .col-2 {
+                            p {
+                                text-align: justify;
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+    </style>
+    <style>
+        #take-control {
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            justify-content: space-around;
+
+            p {
+                color: white;
+                font-family: Roboto Slab, serif;
+                font-size: 2.0em;
+                font-weight: 400;
+                font-optical-sizing: auto;
+                line-height: 1.2em;
+                letter-spacing: 1px;
+                padding-bottom: 0.5em;
+                text-align: center;
+            }
+        }
+    </style>
+    <style>
+        #testimony {
+            padding-top: 2%;
+            padding-bottom: 2%;
+            height: 26vh;
+            display: block;
+
+            .container {
+                width: 75%;
+                margin-left: auto;
+                margin-right: auto;
+                height: 100%;
+
+                slide-container {
+                    display: block;
+                    height: 100%;
+
+                    slide-pane {
+                        display: flex;
+                        height: auto;
+                        flex-direction: column;
+                        align-content: center;
+                        justify-content: space-around;
+
+                        h1 {
+                            color: cornflowerblue;
+                            font-family: Roboto Slab, serif;
+                            font-size: 1.5em;
+                            font-weight: 400;
+                            font-optical-sizing: auto;
+                            line-height: 1.2em;
+                            letter-spacing: 1px;
+                            padding-bottom: 0.5em;
+                            text-align: center;
+                        }
+
+                        p {
+                            color: black;
+                            font-family: Roboto Slab, serif;
+                            font-size: 1.2em;
+                            font-weight: 300;
+                            font-optical-sizing: auto;
+                            line-height: 1.2em;
+                            letter-spacing: 1px;
+                            padding-bottom: 0.5em;
+                            text-align: center;
+                        }
+
+                        .cite {
+                            color: black;
+                            font-family: Roboto Slab, serif;
+                            font-size: 1em;
+                            font-weight: 400;
+                            font-style: italic;
+                            font-optical-sizing: auto;
+                            line-height: 1.2em;
+                            letter-spacing: 1px;
+                            padding-bottom: 1em;
+                            text-align: center;
+                        }
+
+                        .stars-5 {
+                            text-align: center;
+
+                            img {
+                                height: 2em;
+                                width: 2em;
+                                object-fit: cover
+                            }
+                        }
+                    }
+                }
+            }
+
+            @media screen and (max-width: 850px) {
+                height: 32vh;
+            }
+
+            @media screen and (max-width: 700px) {
+                height: 37vh;
+            }
+
+            @media screen and (max-width: 600px) {
+                height: 42vh;
+            }
+            @media screen and (max-width: 800px) {
+                .container {
+                    width: 90%;
+                }
+
+            }
+
+            @media screen and (max-width: 400px) {
+                height: 30vh;
+                .container {
+
+                    slide-container {
+                        slide-pane {
+                            .cite {
+                                display: none;
+                            }
+
+                            .stars-5 {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    </style>
+    <style>
+        #contact {
+            display: block;
+            padding-top: 2%;
+            padding-bottom: 2%;
+
+            .container {
+                width: 75%;
+                margin-left: auto;
+                margin-right: auto;
+
+                .row-1 {
+                    display: flex;
+
+                    .col-1, .col-2 {
+                        .title {
+                            color: black;
+                            font-family: Roboto Slab, serif;
+                            font-size: 1em;
+                            font-weight: 400;
+                            font-optical-sizing: auto;
+                            line-height: 1.2em;
+                            letter-spacing: 1px;
+                            text-align: left;
+                            border-left-color: aquamarine;
+                            border-left-width: 2px;
+                            border-left-style: solid;
+                            padding-left: 1em;
+                            margin-bottom: 1em;
+                        }
+                    }
+
+                    .col-1, .col-2, .col-3 {
+                        flex: 1 1 0;
+                    }
+
+                    .col-1 {
+                        .email, .telephone {
+                            color: black;
+                            font-family: Roboto Slab, serif;
+                            font-size: 1em;
+                            font-weight: 400;
+                            font-optical-sizing: auto;
+                            line-height: 1.2em;
+                            letter-spacing: 1px;
+                            padding-bottom: 1em;
+                            text-align: left;
+                        }
+                    }
+
+                    .col-2 {
+
+                    }
+
+                    .col-3 {
+
+                    }
+                }
+            }
+
+            @media screen and (max-width: 800px) {
+                .container {
+                    width: 90%;
+
+                    .row-1 {
+                        flex-direction: column;
+                    }
+                }
+            }
+
+        }
+    </style>
+    <style>
+        #copyright {
+            display: block;
+            padding-top: 0.5em;
+            padding-bottom: 0.5em;
+            background-color: steelblue;
+
+            p {
+                color: black;
+                font-family: Roboto Slab, serif;
+                font-size: 0.75em;
+                font-weight: 200;
+                font-optical-sizing: auto;
+                line-height: 1.2em;
+                letter-spacing: 1px;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+<page-content style="width: 100%">
+    <nav-bar id="navbar" class="nav-bar-dropdown-at-1200-px">
+        <nav-bar-branding id="navbar-branding">
+            <img src="img/my-logo.png"/>
+        </nav-bar-branding>
+        <nav-bar-menu id="navbar-menu"></nav-bar-menu>
+        <nav-bar-burger>
+            <div id="nav-bar-burger-bar1"></div>
+            <div id="nav-bar-burger-bar2"></div>
+            <div id="nav-bar-burger-bar3"></div>
+        </nav-bar-burger>
+    </nav-bar>
+    <hero-section
+            id="general"
+            data-menu-text="GENERAL"
+            data-menu-icon="whatever"
+            data-menu-icon-location="LEFT"
+            data-image="ocean.jpg"
+            data-height="100"
+    >
+        <div class="container">
+            <p class="title">Mindfully you.</p>
+            <p class="title">Be the best version of yourself.</p>
+            <p class="detail">Mindfulness for stress and anxiety courses and workshops. Come on a
+                mindful journey to reduce stress and see how your life can thrive.</p>
+        </div>
+    </hero-section>
+    <a-section
+            id="mindfulness"
+            data-menu-text="MINDFULNESS"
+    >
+        <div class="row-1">
+            <p class="title">What is Mindfulness?</p>
+            <div class="divider"></div>
+            <p class="detail">To put it simply, mindfulness is about learning how to be
+                present in the moment and being
+                aware of your thoughts and feelings, while managing them healthily.</p>
+            <p class="detail">We are experiencing an increase level of stress and mental
+                health issues. We tend to live in
+                autopilot, rushing from one thing to another without really noticing what's in front of us. Learning
+                to be
+                in the present moment rather than up in our heads worrying about the past or future, helps us feel
+                more
+                grateful and alive.</p>
+            <p class="detail">Mindfulness helps us become aware of what is happening
+                mentally, emotionally and physically,
+                so that we can choose how to respond, rather than react, to life's difficult situations. We learn
+                tools that
+                help us take a step back, pause, accept the situation and then choose how to respond. This can be
+                incredibly
+                powerful in changing a situation or thought </p>
+            <p class="detail">We learn Mindfulness techniques to let go of negative thoughts,
+                rather than letting them
+                control us. It has been shown that after a mindfulness course -where you learn about breathing
+                techniques,
+                meditation, walking and movement meditations, mindful eating and a plethora of other tools- our
+                brain
+                network starts to change, bringing changes in mood, happiness levels, and overall well-being. </p>
+        </div>
+        <div
+                class="row-2"
+
+        >
+            <div class="col-1">
+                <img class="image" src="img/femaledancing.png"/>
+                <p class="subtitle">Feed your Mind</p>
+                <p class="subdetail">Reduce stress and anxiety. Increase your clarity and focus.</p>
+            </div>
+            <div class="col-2">
+                <img class="image" src="img/femalelandyellow.jpg"/>
+                <p class="subtitle">Nourish your Soul</p>
+                <p class="subdetail">
+                    Build your self-esteem and confidence. Improve your relationships.
+                </p>
+            </div>
+            <div class="col-3">
+                <img class="image" src="img/personholdingflower.jpg"/>
+                <p class="subtitle">Connect Mind and Body</p>
+                <p class="subdetail">Manage your pain and illness. Boost your sleep quality.</p>
+            </div>
+        </div>
+    </a-section>
+
+    <hero-section
+            id="present-moment"
+            data-image="mountain-compressed.jpg"
+            data-height="30"
+    >
+        <p class="text">Learn how to be present in the moment</p>
+    </hero-section>
+    <a-section
+            id="benefits"
+            data-menu-text="BENEFITS"
+    >
+        <div class="row-1">
+            <div class="col-1">
+                <img src="img/mansittingmountaint.jpg" class="image"></div>
+            <div class="col-2">
+                <p class="title">Benefits of Mindfulness</p>
+                <div class="divider"></div>
+                <p class="detail">
+                    The benefits of mindfulness are endless. The importance of physical wellbeing is always promoted,
+                    including exercise and a healthy diet. However; the importance of mental wellbeing has often been
+                    overlooked until recently.
+                    Mindfulness helps improve your entire mental wellbeing, by:
+                </p>
+                <ul class="list">
+                    <li>Reducing stress and anxiety</li>
+                    <li>Improving sleep quality</li>
+                    <li>Increasing clarity and focus</li>
+                    <li>Building your self-esteem and confidence</li>
+                    <li>Improving relationships</li>
+                </ul>
+                <p class="detail"> All these benefits can be achieved by doing simple, regular mindfulness
+                    techniques.</p>
+            </div>
+        </div>
+    </a-section>
+    <hero-section
+            id="indications"
+            data-menu-text="INDICATIONS"
+            data-image="personholdingflower.0.25.png"
+            data-height="30"
+    >
+        <div class="container">
+            <h1>Who is Mindfulness for?</h1>
+            <div class="divider"></div>
+            <p>
+                Mindfulness is being carried out in a variety of places now: Many schools are teaching it to kids and
+                are finding stress levels are decreasing. The NHS is using it, and even Corporate companies are
+                welcoming it, as mental health in the workplace has become an increasing priority.
+            </p>
+            <p>
+                My clients include busy professional women, and families, who are feeling stuck or
+                overwhelmed and found the benefits of Mindfulness very effective.
+            </p>
+            <p>
+                At the end of the day, mindfulness is for everyone, from those who might be feeling
+                anxious or overwhelmed, to those feeling stuck and simply wanting more from life.
+                Mindfulness is not difficult; it’s not a religion, and you don’t have to sit crossed leg on
+                the floor!
+            </p>
+        </div>
+    </hero-section>
+
+    <a-section
+            id="buddha"
+    >
+        <div class="container">
+            <q>Our life is shaped by our mind, for we become what we think.</q>
+            <p><cite>Buddha</cite></p>
+        </div>
+    </a-section>
+
+    <a-section
+            id="about"
+            data-menu-text="ABOUT ME"
+    >
+        <div class="container">
+            <div class="row-1">
+                <h1>About Nina Colvin</h1>
+                <div class="divider"></div>
+            </div>
+            <div class="row-2">
+                <div class="col-1">
+                    <img src="img/nina.jpg">
+                </div>
+                <div class="col-2">
+                    <p>As a busy working mother, juggling the work/life balance often felt stressful and
+                        overwhelming. Then, when my mother passed away, I could feel myself struggling even more.
+                        Looking for ways to take back control of my life, I discovered Mindfulness.
+                    </p>
+
+                    <p>After taking a Mindfulness course in 2014, I discovered a deep sense of calm and peace.
+                        As I learnt to calm my busy mind, I was able to focus and be more productive in my
+                        daily life. Learning and implementing the tools of Mindfulness reminded me to be
+                        compassionate with myself and others. I felt more confident to deal with what life
+                        threw at me.
+                    </p>
+
+                    <p>
+                        Then having decided to train as a Mindfulness teacher, I gained an Accredited
+                        Mindfulness Teacher qualification with Breathworks UK. The training took me even deeper
+                        into connecting with my inner strength, and learning important life skills to deal with
+                        life’s stresses and strains. I am passionate about sharing this with others,
+                        as they can make profound, positive changes in our lives.
+                    </p>
+
+                    <p>
+                        Over the years, I have seen many clients benefit from my Mindfulness courses, and they are now
+                        able
+                        to better deal with their stress and anxiety, increasing their wellbeing and quality of life.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </a-section>
+    <hero-section
+            id="take-control"
+            data-height="25"
+            data-image="trees.jpg"
+    >
+        <p>Learn how to take control of your life.</p>
+
+    </hero-section>
+    <a-section
+            id="testimony"
+            data-menu-text="TESTIMONY"
+            style="background-color: aliceblue;"
+    >
+        <div class="container">
+            <slide-container
+                    data-speed="500"
+                    data-delay="3000"
+                    data-stop-on-hover="false"
+            >
+                <slide-pane class="slide">
+                    <h1>Very relaxed in a comfortable environment</h1>
+                    <p>
+                        I attended a mindfulness session and found it to be informative and helpful
+                        and also good fun. Nina has a very nice way about her and the coaching
+                        is very relaxed in a comfortable and safe environment.
+                    </p>
+                    <p class="cite">Laura Dowd</p>
+                    <div class="stars-5">
+                        <img src="img/yellow-star.svg">
+                        <img src="img/yellow-star.svg">
+                        <img src="img/yellow-star.svg">
+                        <img src="img/yellow-star.svg">
+                        <img src="img/yellow-star.svg">
+
+                    </div>
+                </slide-pane>
+                <slide-pane class="slide">
+                    <h1>Thoroughly enjoyable</h1>
+                    <p>
+                        I did an 8 week one-to-one with Nina and found it most useful.
+                        I practice Mindfulness regularly now in daily life. In ways, it has been
+                        life-changing, simply by making me appreciate the moments.
+                        Nina has a gentle smiley way to make the sessions thoroughly enjoyable.
+                    </p>
+                    <p class="cite">Bea Jung</p>
+                    <div class="stars-5">
+                        <img src="img/yellow-star.svg">
+                        <img src="img/yellow-star.svg">
+                        <img src="img/yellow-star.svg">
+                        <img src="img/yellow-star.svg">
+                        <img src="img/yellow-star.svg">
+
+                    </div>
+                </slide-pane>
+                <slide-pane class="slide">
+                    <h1>Tools for life</h1>
+                    <p>
+                        I feel these are potentially tools for life – big thank you Nina!
+                        This is my second attempt to learn mindfulness and has been a success.
+                        I use mindfulness practises every day now and would not be without them.
+                    </p>
+                    <p class="cite">Bridget Bandura</p>
+                    <div class="stars-5">
+                        <img src="img/yellow-star.svg">
+                        <img src="img/yellow-star.svg">
+                        <img src="img/yellow-star.svg">
+                        <img src="img/yellow-star.svg">
+                        <img src="img/yellow-star.svg">
+
+                    </div>
+                </slide-pane>
+                <slide-pane class="slide">
+                    <h1>Highly recommend</h1>
+                    <p>
+                        I went to Nina’s taster session on mindfulness and learnt
+                        some really useful techniques on relaxation. Would highly recommend.
+                    </p>
+                    <p class="cite">Vicky Charlotte Burn</p>
+                    <div class="stars-5">
+                        <img src="img/yellow-star.svg">
+                        <img src="img/yellow-star.svg">
+                        <img src="img/yellow-star.svg">
+                        <img src="img/yellow-star.svg">
+                        <img src="img/yellow-star.svg">
+
+                    </div>
+                </slide-pane>
+                <slide-pane class="slide">
+                    <h1>Re-focus and re-charge</h1>
+                    <p>
+                        I absolutely love Nina’s lunchtime mindfulness online sessions.
+                        I decided to join her online sessions on a Monday to force me take a
+                        break from my busy Monday work schedule!
+                    </p>
+                    <p>
+                        It helps me re-focus and re-charge.
+                    </p>
+                    <p>
+                        I feel energised for the rest of the afternoon.
+                    </p>
+                    <p>
+                        Thank you, Nina!!
+                    </p>
+                    <p class="cite">Ariane Eva Morin</p>
+                    <div class="stars-5">
+                        <img src="img/yellow-star.svg">
+                        <img src="img/yellow-star.svg">
+                        <img src="img/yellow-star.svg">
+                        <img src="img/yellow-star.svg">
+                        <img src="img/yellow-star.svg">
+                    </div>
+                </slide-pane>
+            </slide-container>
+        </div>
+    </a-section>
+    <a-section
+            id="contact"
+            data-menu-text="CONTACT"
+    >
+        <div class="container">
+            <div class="row-1">
+                <div class="col-1">
+                    <p class="title">General Enquiries</p>
+                    <p class="email"><a href="mailto:nxcolvin@gmail.com">nxcolvin@gmail.com</a></p>
+                    <p class="telephone"><a href="tel:07973829844">0797-382-9844</a></p>
+                </div>
+                <div class="col-2">
+                    <p class="title">Studio Address</p>
+                    <div class="address">
+                        <p>Inspired Hub</p>
+                        <p>3 Ashley Road</p>
+                        <p>Hampton</p>
+                        <p>TW12 2JA</p>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <a href="https://www.facebook.com/mindfulness.stress.courses">
+                        <img src="img/Facebook_Logo_Primary.png" style="min-height: 16px; min-width: 16px; height:2em;">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </a-section>
+
+    <a-section
+            id="copyright"
+    >
+        <div class="container">
+            <p>Copyright 2021-2025 Nina Colvin | Mindfully You </p>
+        </div>
+    </a-section>
+</page-content>
+<script src="js/kokolex-js-browser.js"></script>
+</body>
+</html>

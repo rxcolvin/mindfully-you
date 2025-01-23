@@ -1,0 +1,58 @@
+nav-bar {
+    nav-bar-branding {
+        display: block;
+        float: left;
+        margin-left: 1%;
+    }
+
+    nav-bar-burger {
+        display: inline-block;
+        cursor: pointer;
+        margin-right: 1%;
+    }
+
+    #nav-bar-burger-bar1, #nav-bar-burger-bar2, #nav-bar-burger-bar3 {
+        width: 35px;
+        height: 3px;
+        background-color: black;
+        margin: 8px 0;
+        transition: 0.4s;
+    }
+
+    .navbar-is-active #nav-bar-burger-bar1 {
+        transform: translate(0, 11px) rotate(-45deg);
+    }
+
+    .navbar-is-active #nav-bar-burger-bar2 {
+        opacity: 0;
+    }
+
+    .navbar-is-active #nav-bar-burger-bar3 {
+        transform: translate(0, -11px) rotate(45deg);
+    }
+
+    nav-bar-menu {
+        position: absolute;
+        display: block;
+        height: 0;
+        width: 100%;
+        background-color: white;
+        overflow-y: hidden;
+        top: 100px;
+        left: 0;
+    }
+
+    nav-bar-menu.navbar-is-active {
+        display: block;
+        height: auto;
+        font-family: "Roboto Slab", serif;
+        font-feature-settings: normal;
+        font-kerning: auto;
+        font-optical-sizing: auto;
+        font-size: 15px;
+        font-size-adjust: none;
+        font-stretch: 100%;
+        font-style: normal;
+    }
+
+}
