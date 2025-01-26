@@ -1,0 +1,9 @@
+x-stars {
+    text-align: center;
+    display: block;
+    img {
+        height: 2em;
+        width: 2em;
+        object-fit: cover
+    }
+}

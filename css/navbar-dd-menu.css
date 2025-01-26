@@ -1,12 +1,10 @@
 nav-bar {
     nav-bar-branding {
-        display: block;
-        float: left;
         margin-left: 1%;
     }
 
     nav-bar-burger {
-        display: inline-block;
+        display: block;
         cursor: pointer;
         margin-right: 1%;
     }

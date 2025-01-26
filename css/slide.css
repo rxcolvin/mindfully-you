@@ -1,0 +1,15 @@
+slide-container {
+
+    position: relative !important;
+    overflow: hidden !important;
+    width: 100% !important;
+    display: block !important;
+
+
+    slide-pane {
+        position: absolute !important;
+        width: 100% !important;
+        top: 0 !important;
+        display: block !important;
+    }
+}
