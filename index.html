@@ -5,17 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Mindfully You | Nina Colvin - Mindfulness for Stress</title>
-    <meta name="description" content="Mindfully You | Nina Colvin - Hampton based Accredited Mindfulness teacher. Mindfulness for Stress courses - workshops, online and in-person."/>
+    <meta name="description"
+          content="Mindfully You | Nina Colvin - Hampton based Accredited Mindfulness teacher. Mindfulness for Stress courses - workshops, online and in-person."/>
     <meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"/>
     <meta property="og:locale" content="en_GB"/>
     <meta property="og:type" content="website"/>
     <meta property="og:title" content="Mindfully You | Nina Colvin - Mindfulness for Stress"/>
-    <meta property="og:description" content="Mindfully You | Nina Colvin - Hampton based Accredited Mindfulness teacher. Mindfulness for Stress courses - workshops, online and in-person."/>
+    <meta property="og:description"
+          content="Mindfully You | Nina Colvin - Hampton based Accredited Mindfulness teacher. Mindfulness for Stress courses - workshops, online and in-person."/>
     <meta property="og:url" content="https://web.archive.org/web/20240220183310/https://mindfully-you.co.uk/"/>
     <meta property="og:site_name" content="Mindfully You"/>
     <meta property="og:updated_time" content="2023-02-11T02:38:08+00:00"/>
-    <meta property="og:image" content="https://web.archive.org/web/20240220183310im_/https://mindfully-you.co.uk/wp-content/uploads/2021/11/mindfully-you-social.jpg"/>
-    <meta property="og:image:secure_url" content="https://mindfully-you.co.uk/wp-content/uploads/2021/11/mindfully-you-social.jpg"/>
+    <meta property="og:image"
+          content="https://web.archive.org/web/20240220183310im_/https://mindfully-you.co.uk/wp-content/uploads/2021/11/mindfully-you-social.jpg"/>
+    <meta property="og:image:secure_url"
+          content="https://mindfully-you.co.uk/wp-content/uploads/2021/11/mindfully-you-social.jpg"/>
     <meta property="og:image:width" content="1200"/>
     <meta property="og:image:height" content="630"/>
     <meta property="og:image:alt" content="Mindfully You"/>
@@ -24,8 +28,10 @@
     <meta property="article:modified_time" content="2023-02-11T02:38:08+00:00"/>
     <meta name="twitter:card" content="summary_large_image"/>
     <meta name="twitter:title" content="Mindfully You | Nina Colvin - Mindfulness for Stress"/>
-    <meta name="twitter:description" content="Mindfully You | Nina Colvin - Hampton based Accredited Mindfulness teacher. Mindfulness for Stress courses - workshops, online and in-person."/>
-    <meta name="twitter:image" content="https://web.archive.org/web/20240220183310im_/https://mindfully-you.co.uk/wp-content/uploads/2021/11/mindfully-you-social.jpg"/>
+    <meta name="twitter:description"
+          content="Mindfully You | Nina Colvin - Hampton based Accredited Mindfulness teacher. Mindfulness for Stress courses - workshops, online and in-person."/>
+    <meta name="twitter:image"
+          content="https://web.archive.org/web/20240220183310im_/https://mindfully-you.co.uk/wp-content/uploads/2021/11/mindfully-you-social.jpg"/>
     <meta name="twitter:label1" content="Written by"/>
     <meta name="twitter:data1" content="adam"/>
     <meta name="twitter:label2" content="Time to read"/>
@@ -48,8 +54,6 @@
         page-content {
             display: block;
         }
-
-
     </style>
     <style>
         #navbar {
@@ -59,7 +63,7 @@
             background-color: #e3f2fd;
             width: 100% !important;
 
-            /*box-shadow: 0px 15px 10px -15px;*/
+            box-shadow: 0px 15px 10px -15px;
 
             nav-bar-menu {
                 scroll-to {
@@ -68,13 +72,14 @@
                     font-size: 16px;
                     border-bottom-style: solid;
                     border-bottom-width: 2px;
-                    border-color: cornflowerblue;
+                    border-color: #e3f2fd;
                 }
+
 
                 scroll-to:hover {
                     color: blue;
                     cursor: pointer;
-                    border-color: blue;
+                    border-color: cornflowerblue;
                 }
             }
 
@@ -114,12 +119,20 @@
 
     <style> /* Style for id=general section  */
 
-    #general {
+    div#general {
         /* Large */
         display: flex;
         align-items: center;
+        height: calc(100vh - 100px) !important;
+        max-height: calc(100vh - 100px) !important;
+        min-height: calc(100vh - 100px) !important;
+        background-image: url('img/ocean.jpg');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
 
-        .container {
+
+    .container {
             margin: 0 auto;
             overflow: auto;
             text-align: center;
@@ -155,10 +168,21 @@
                 padding-right: 5%;
             }
         }
+
+        @media screen and (max-width: 400px) {
+            .title {
+                font-size: 3em;
+            }
+
+            .detail {
+                font-size: 1.2em;
+            }
+        }
+
     }
     </style>
     <style>
-        #mindfulness {
+        section#mindfulness {
             display: block;
             padding-top: 1.5%;
             padding-bottom: 1.5%;
@@ -172,7 +196,7 @@
                 .title {
                     font-family: Roboto Slab, serif;
                     color: cornflowerblue;
-                    font-size: 2em;
+                    font-size: 1.5em;
                     font-weight: 400;
                     font-optical-sizing: auto;
                     line-height: 1.2em;
@@ -183,7 +207,7 @@
                 .detail {
                     font-family: Roboto Slab, serif;
                     color: black;
-                    font-size: 1.3em;
+                    font-size: 1em;
                     font-weight: 200;
                     font-optical-sizing: auto;
                     line-height: 1.2em;
@@ -281,11 +305,15 @@
         }
     </style>
     <style>
-        #present-moment {
+        section#present-moment {
             display: block;
             padding-top: 3%;
             padding-bottom: 3%;
             width: 100%;
+            background-image: url("img/mountain-compressed.jpg");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
 
             .text {
                 font-family: Roboto Slab, serif;
@@ -308,7 +336,7 @@
         }
     </style>
     <style>
-        #benefits {
+        section#benefits {
             display: block;
             padding-top: 3%;
             padding-bottom: 3%;
@@ -400,10 +428,15 @@
         }
     </style>
     <style>
-        #indications {
+        section#indications {
             padding-top: 3%;
             padding-bottom: 3%;
             display: block;
+            background-image: url("img/personholdingflower.0.5.png");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+
 
             .container {
                 width: 70%;
@@ -451,7 +484,7 @@
         }
     </style>
     <style>
-        #buddha {
+        div#buddha {
             display: block;
             padding-top: 3%;
             padding-bottom: 3%;
@@ -489,7 +522,7 @@
 
     </style>
     <style>
-        #about {
+        div#about-me {
             display: block;
             padding-top: 3%;
             padding-bottom: 3%;
@@ -588,11 +621,19 @@
         }
     </style>
     <style>
-        #take-control {
+        section#take-control {
             display: flex;
             flex-direction: column;
             align-content: center;
             justify-content: space-around;
+            width: 100%;
+            padding-top: 4%;
+            padding-bottom: 4%;
+            background-image: url("img/trees.jpg");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+
 
             p {
                 color: white;
@@ -608,11 +649,12 @@
         }
     </style>
     <style>
-        #testimony {
+        div#testimony {
             display: block;
             padding-top: 2%;
             padding-bottom: 2%;
             height: 26vh;
+            background-color: aliceblue;
 
             .container {
                 width: 75%;
@@ -620,9 +662,20 @@
                 margin-right: auto;
                 height: 100%;
 
+                p.testimonials {
+                    font-family: Roboto Slab, serif;
+                    font-size: 1.5em;
+                    font-weight: 500;
+                    width: 100%;
+                    text-align: left;
+                    color: royalblue;
+                    height: 1.5em;
+
+                }
+
                 slide-container {
                     display: block;
-                    height: 100%;
+                    height: calc(100% - 1.5em);
 
                     slide-pane {
                         display: flex;
@@ -630,6 +683,11 @@
                         flex-direction: column;
                         align-content: center;
                         justify-content: space-around;
+                        background-color: ghostwhite;
+                        border-color: aliceblue;
+                        border-width: 2px;
+                        border-style: dot-dot-dash;
+                        border-radius: 10%;
 
                         h1 {
                             color: cornflowerblue;
@@ -668,7 +726,7 @@
                             text-align: center;
                         }
 
-                        .stars-5 {
+                        x-stars {
                             text-align: center;
 
                             img {
@@ -692,25 +750,39 @@
             @media screen and (max-width: 600px) {
                 height: 42vh;
             }
+
             @media screen and (max-width: 800px) {
                 .container {
                     width: 90%;
                 }
-
             }
 
             @media screen and (max-width: 400px) {
-                height: 30vh;
+                height: 45vh;
                 .container {
+                    p.testimonials {
+                        font-size: 1.2em;
+                    }
 
                     slide-container {
                         slide-pane {
-                            .cite {
-                                display: none;
+                            h1 {
+                                font-size: 1.2em;
                             }
 
-                            .stars-5 {
-                                display: none;
+                            p {
+                                font-size: 1em;
+                            }
+
+                            .cite {
+                                font-size: 0.8em;
+                            }
+
+                            x-stars {
+                                img {
+                                    width: 1.5em;
+                                    height: 1.5em;
+                                }
                             }
                         }
                     }
@@ -720,7 +792,7 @@
         }
     </style>
     <style>
-        #contact {
+        div#contact {
             display: block;
             padding-top: 2%;
             padding-bottom: 2%;
@@ -792,7 +864,7 @@
         }
     </style>
     <style>
-        #copyright {
+        div#copyright {
             display: block;
             padding-top: 0.5em;
             padding-bottom: 0.5em;
@@ -817,317 +889,342 @@
         <nav-bar-branding id="navbar-branding">
             <img src="img/my-logo.png"/>
         </nav-bar-branding>
-        <nav-bar-menu id="navbar-menu"></nav-bar-menu>
+        <nav-bar-menu id="navbar-menu">
+            <scroll-to
+                    id="scroll-to-general"
+                    data-scroll-to-id="general">
+                General
+            </scroll-to>
+            <scroll-to
+                    id="scroll-to-mindfulness"
+                    data-scroll-to-id="mindfulness">
+                <p>Mindfulness</p>
+                <div class="menu-item-underline"></div>
+            </scroll-to>
+            <scroll-to
+                    id="scroll-to-benefits"
+                    data-scroll-to-id="benefits">
+                Benefits
+            </scroll-to>
+            <scroll-to
+                    id="scroll-to-indications"
+                    data-scroll-to-id="indications">
+                Indications
+            </scroll-to>
+            <scroll-to
+                    id="scroll-to-about-me"
+                    data-scroll-to-id="about-me">
+                About Me
+            </scroll-to>
+            <scroll-to
+                    id="scroll-to-testimony"
+                    data-scroll-to-id="testimony">
+                Testimony
+            </scroll-to>
+            <scroll-to
+                    id="scroll-to-contact"
+                    data-scroll-to-id="contact">
+                Contact
+            </scroll-to>
+        </nav-bar-menu>
         <nav-bar-burger>
             <div id="nav-bar-burger-bar1"></div>
             <div id="nav-bar-burger-bar2"></div>
             <div id="nav-bar-burger-bar3"></div>
         </nav-bar-burger>
     </nav-bar>
-    <hero-section
-            id="general"
-            data-menu-text="GENERAL"
-            data-menu-icon="whatever"
-            data-menu-icon-location="LEFT"
-            data-image="ocean.jpg"
-            data-height="100"
-    >
-        <div class="container">
-            <p class="title">Mindfully you.</p>
-            <p class="title">Be the best version of yourself.</p>
-            <p class="detail">Mindfulness for stress and anxiety courses and workshops. Come on a
-                mindful journey to reduce stress and see how your life can thrive.</p>
-        </div>
-    </hero-section>
-    <a-section
-            id="mindfulness"
-            data-menu-text="MINDFULNESS"
-    >
-        <div class="row-1">
-            <p class="title">What is Mindfulness?</p>
-            <div class="divider"></div>
-            <p class="detail">To put it simply, mindfulness is about learning how to be
-                present in the moment and being
-                aware of your thoughts and feelings, while managing them healthily.</p>
-            <p class="detail">We are experiencing an increase level of stress and mental
-                health issues. We tend to live in
-                autopilot, rushing from one thing to another without really noticing what's in front of us. Learning
-                to be
-                in the present moment rather than up in our heads worrying about the past or future, helps us feel
-                more
-                grateful and alive.</p>
-            <p class="detail">Mindfulness helps us become aware of what is happening
-                mentally, emotionally and physically,
-                so that we can choose how to respond, rather than react, to life's difficult situations. We learn
-                tools that
-                help us take a step back, pause, accept the situation and then choose how to respond. This can be
-                incredibly
-                powerful in changing a situation or thought </p>
-            <p class="detail">We learn Mindfulness techniques to let go of negative thoughts,
-                rather than letting them
-                control us. It has been shown that after a mindfulness course -where you learn about breathing
-                techniques,
-                meditation, walking and movement meditations, mindful eating and a plethora of other tools- our
-                brain
-                network starts to change, bringing changes in mood, happiness levels, and overall well-being. </p>
-        </div>
-        <div
-                class="row-2"
 
-        >
+</page-content>
+<div class="nav-bar-underlay"></div>
+<div
+        id="general"
+>
+    <div class="container">
+        <p class="title">Mindfully you.</p>
+        <p class="title">Be the best version of yourself.</p>
+        <p class="detail">Mindfulness for stress and anxiety courses and workshops. Come on a
+            mindful journey to reduce stress and see how your life can thrive.</p>
+    </div>
+</div>
+<section
+        id="mindfulness"
+>
+    <div class="row-1">
+        <p class="title">What is Mindfulness?</p>
+        <div class="divider"></div>
+        <p class="detail">To put it simply, mindfulness is about learning how to be
+            present in the moment and being
+            aware of your thoughts and feelings, while managing them healthily.</p>
+        <p class="detail">We are experiencing an increase level of stress and mental
+            health issues. We tend to live in
+            autopilot, rushing from one thing to another without really noticing what's in front of us. Learning
+            to be
+            in the present moment rather than up in our heads worrying about the past or future, helps us feel
+            more
+            grateful and alive.</p>
+        <p class="detail">Mindfulness helps us become aware of what is happening
+            mentally, emotionally and physically,
+            so that we can choose how to respond, rather than react, to life's difficult situations. We learn
+            tools that
+            help us take a step back, pause, accept the situation and then choose how to respond. This can be
+            incredibly
+            powerful in changing a situation or thought </p>
+        <p class="detail">We learn Mindfulness techniques to let go of negative thoughts,
+            rather than letting them
+            control us. It has been shown that after a mindfulness course -where you learn about breathing
+            techniques,
+            meditation, walking and movement meditations, mindful eating and a plethora of other tools- our
+            brain
+            network starts to change, bringing changes in mood, happiness levels, and overall well-being. </p>
+    </div>
+    <div
+            class="row-2"
+    >
+        <div class="col-1">
+            <img class="image" src="img/femaledancing.png"/>
+            <p class="subtitle">Feed your Mind</p>
+            <p class="subdetail">Reduce stress and anxiety. Increase your clarity and focus.</p>
+        </div>
+        <div class="col-2">
+            <img class="image" src="img/femalelandyellow.jpg"/>
+            <p class="subtitle">Nourish your Soul</p>
+            <p class="subdetail">
+                Build your self-esteem and confidence. Improve your relationships.
+            </p>
+        </div>
+        <div class="col-3">
+            <img class="image" src="img/personholdingflower.jpg"/>
+            <p class="subtitle">Connect Mind and Body</p>
+            <p class="subdetail">Manage your pain and illness. Boost your sleep quality.</p>
+        </div>
+    </div>
+</section>
+
+<section
+        id="present-moment"
+
+>
+    <p class="text">Learn how to be present in the moment</p>
+</section>
+<section
+        id="benefits"
+>
+    <div class="row-1">
+        <div class="col-1">
+            <img src="img/mansittingmountaint.jpg" class="image"></div>
+        <div class="col-2">
+            <p class="title">Benefits of Mindfulness</p>
+            <div class="divider"></div>
+            <p class="detail">
+                The benefits of mindfulness are endless. The importance of physical wellbeing is always promoted,
+                including exercise and a healthy diet. However; the importance of mental wellbeing has often been
+                overlooked until recently.
+                Mindfulness helps improve your entire mental wellbeing, by:
+            </p>
+            <ul class="list">
+                <li>Reducing stress and anxiety</li>
+                <li>Improving sleep quality</li>
+                <li>Increasing clarity and focus</li>
+                <li>Building your self-esteem and confidence</li>
+                <li>Improving relationships</li>
+            </ul>
+            <p class="detail"> All these benefits can be achieved by doing simple, regular mindfulness
+                techniques.</p>
+        </div>
+    </div>
+</section>
+<section
+        id="indications"
+        data-image="personholdingflower.0.25.png"
+        data-height="30"
+>
+    <div class="container">
+        <h1>Who is Mindfulness for?</h1>
+        <div class="divider"></div>
+        <p>
+            Mindfulness is being carried out in a variety of places now: Many schools are teaching it to kids and
+            are finding stress levels are decreasing. The NHS is using it, and even Corporate companies are
+            welcoming it, as mental health in the workplace has become an increasing priority.
+        </p>
+        <p>
+            My clients include busy professional women, and families, who are feeling stuck or
+            overwhelmed and found the benefits of Mindfulness very effective.
+        </p>
+        <p>
+            At the end of the day, mindfulness is for everyone, from those who might be feeling
+            anxious or overwhelmed, to those feeling stuck and simply wanting more from life.
+            Mindfulness is not difficult; it’s not a religion, and you don’t have to sit crossed leg on
+            the floor!
+        </p>
+    </div>
+</section>
+
+<div
+        id="buddha"
+>
+    <div class="container">
+        <q>Our life is shaped by our mind, for we become what we think.</q>
+        <p><cite>Buddha</cite></p>
+    </div>
+</div>
+
+<div
+        id="about-me"
+>
+    <div class="container">
+        <div class="row-1">
+            <h1>About Nina Colvin</h1>
+            <div class="divider"></div>
+        </div>
+        <div class="row-2">
             <div class="col-1">
-                <img class="image" src="img/femaledancing.png"/>
-                <p class="subtitle">Feed your Mind</p>
-                <p class="subdetail">Reduce stress and anxiety. Increase your clarity and focus.</p>
+                <img src="img/nina.jpg">
             </div>
             <div class="col-2">
-                <img class="image" src="img/femalelandyellow.jpg"/>
-                <p class="subtitle">Nourish your Soul</p>
-                <p class="subdetail">
-                    Build your self-esteem and confidence. Improve your relationships.
+                <p>As a busy working mother, juggling the work/life balance often felt stressful and
+                    overwhelming. Then, when my mother passed away, I could feel myself struggling even more.
+                    Looking for ways to take back control of my life, I discovered Mindfulness.
                 </p>
+
+                <p>After taking a Mindfulness course in 2014, I discovered a deep sense of calm and peace.
+                    As I learnt to calm my busy mind, I was able to focus and be more productive in my
+                    daily life. Learning and implementing the tools of Mindfulness reminded me to be
+                    compassionate with myself and others. I felt more confident to deal with what life
+                    threw at me.
+                </p>
+
+                <p>
+                    Then having decided to train as a Mindfulness teacher, I gained an Accredited
+                    Mindfulness Teacher qualification with Breathworks UK. The training took me even deeper
+                    into connecting with my inner strength, and learning important life skills to deal with
+                    life’s stresses and strains. I am passionate about sharing this with others,
+                    as they can make profound, positive changes in our lives.
+                </p>
+
+                <p>
+                    Over the years, I have seen many clients benefit from my Mindfulness courses, and they are now
+                    able
+                    to better deal with their stress and anxiety, increasing their wellbeing and quality of life.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<section
+        id="take-control"
+        >
+
+    <p>Learn how to take control of your life.</p>
+
+</section>
+<div
+        id="testimony"
+>
+    <div class="container">
+        <p class="testimonials">Testimonials</p>
+        <slide-container
+                data-speed="500"
+                data-delay="5000"
+                data-stop-on-hover="false"
+        >
+            <slide-pane class="slide">
+                <h1>Very relaxed in a comfortable environment</h1>
+                <p>
+                    I attended a mindfulness session and found it to be informative and helpful
+                    and also good fun. Nina has a very nice way about her and the coaching
+                    is very relaxed in a comfortable and safe environment.
+                </p>
+                <p class="cite">Laura Dowd</p>
+                <x-stars></x-stars>
+            </slide-pane>
+            <slide-pane class="slide">
+                <h1>Thoroughly enjoyable</h1>
+                <p>
+                    I did an 8 week one-to-one with Nina and found it most useful.
+                    I practice Mindfulness regularly now in daily life. In ways, it has been
+                    life-changing, simply by making me appreciate the moments.
+                    Nina has a gentle smiley way to make the sessions thoroughly enjoyable.
+                </p>
+                <p class="cite">Bea Jung</p>
+                <x-stars></x-stars>
+            </slide-pane>
+            <slide-pane class="slide">
+                <h1>Tools for life</h1>
+                <p>
+                    I feel these are potentially tools for life – big thank you Nina!
+                    This is my second attempt to learn mindfulness and has been a success.
+                    I use mindfulness practises every day now and would not be without them.
+                </p>
+                <p class="cite">Bridget Bandura</p>
+                <x-stars></x-stars>
+            </slide-pane>
+            <slide-pane>
+                <h1>Highly recommend</h1>
+                <p>
+                    I went to Nina’s taster session on mindfulness and learnt
+                    some really useful techniques on relaxation. Would highly recommend.
+                </p>
+                <p class="cite">Vicky Charlotte Burn</p>
+                <x-stars></x-stars>
+            </slide-pane>
+            <slide-pane>
+                <h1>Re-focus and re-charge</h1>
+                <p>
+                    I absolutely love Nina’s lunchtime mindfulness online sessions.
+                    I decided to join her online sessions on a Monday to force me take a
+                    break from my busy Monday work schedule!
+                </p>
+                <p>
+                    It helps me re-focus and re-charge.
+                </p>
+                <p>
+                    I feel energised for the rest of the afternoon.
+                </p>
+                <p>
+                    Thank you, Nina!!
+                </p>
+                <p class="cite">Ariane Eva Morin</p>
+                <x-stars></x-stars>
+            </slide-pane>
+        </slide-container>
+    </div>
+</div>
+<div
+        id="contact"
+>
+    <div class="container">
+        <div class="row-1">
+            <div class="col-1">
+                <p class="title">General Enquiries</p>
+                <p class="email"><a href="mailto:nxcolvin@gmail.com">nxcolvin@gmail.com</a></p>
+                <p class="telephone"><a href="tel:07973829844">0797-382-9844</a></p>
+            </div>
+            <div class="col-2">
+                <p class="title">Studio Address</p>
+                <div class="address">
+                    <p>Inspired Hub</p>
+                    <p>3 Ashley Road</p>
+                    <p>Hampton</p>
+                    <p>TW12 2JA</p>
+                </div>
             </div>
             <div class="col-3">
-                <img class="image" src="img/personholdingflower.jpg"/>
-                <p class="subtitle">Connect Mind and Body</p>
-                <p class="subdetail">Manage your pain and illness. Boost your sleep quality.</p>
+                <a href="https://www.facebook.com/mindfulness.stress.courses">
+                    <img src="img/Facebook_Logo_Primary.png" style="min-height: 16px; min-width: 16px; height:2em;">
+                </a>
             </div>
         </div>
-    </a-section>
+    </div>
+</div>
 
-    <hero-section
-            id="present-moment"
-            data-image="mountain-compressed.jpg"
-            data-height="30"
-    >
-        <p class="text">Learn how to be present in the moment</p>
-    </hero-section>
-    <a-section
-            id="benefits"
-            data-menu-text="BENEFITS"
-    >
-        <div class="row-1">
-            <div class="col-1">
-                <img src="img/mansittingmountaint.jpg" class="image"></div>
-            <div class="col-2">
-                <p class="title">Benefits of Mindfulness</p>
-                <div class="divider"></div>
-                <p class="detail">
-                    The benefits of mindfulness are endless. The importance of physical wellbeing is always promoted,
-                    including exercise and a healthy diet. However; the importance of mental wellbeing has often been
-                    overlooked until recently.
-                    Mindfulness helps improve your entire mental wellbeing, by:
-                </p>
-                <ul class="list">
-                    <li>Reducing stress and anxiety</li>
-                    <li>Improving sleep quality</li>
-                    <li>Increasing clarity and focus</li>
-                    <li>Building your self-esteem and confidence</li>
-                    <li>Improving relationships</li>
-                </ul>
-                <p class="detail"> All these benefits can be achieved by doing simple, regular mindfulness
-                    techniques.</p>
-            </div>
-        </div>
-    </a-section>
-    <hero-section
-            id="indications"
-            data-menu-text="INDICATIONS"
-            data-image="personholdingflower.0.25.png"
-            data-height="30"
-    >
-        <div class="container">
-            <h1>Who is Mindfulness for?</h1>
-            <div class="divider"></div>
-            <p>
-                Mindfulness is being carried out in a variety of places now: Many schools are teaching it to kids and
-                are finding stress levels are decreasing. The NHS is using it, and even Corporate companies are
-                welcoming it, as mental health in the workplace has become an increasing priority.
-            </p>
-            <p>
-                My clients include busy professional women, and families, who are feeling stuck or
-                overwhelmed and found the benefits of Mindfulness very effective.
-            </p>
-            <p>
-                At the end of the day, mindfulness is for everyone, from those who might be feeling
-                anxious or overwhelmed, to those feeling stuck and simply wanting more from life.
-                Mindfulness is not difficult; it’s not a religion, and you don’t have to sit crossed leg on
-                the floor!
-            </p>
-        </div>
-    </hero-section>
-
-    <a-section
-            id="buddha"
-    >
-        <div class="container">
-            <q>Our life is shaped by our mind, for we become what we think.</q>
-            <p><cite>Buddha</cite></p>
-        </div>
-    </a-section>
-
-    <a-section
-            id="about"
-            data-menu-text="ABOUT ME"
-    >
-        <div class="container">
-            <div class="row-1">
-                <h1>About Nina Colvin</h1>
-                <div class="divider"></div>
-            </div>
-            <div class="row-2">
-                <div class="col-1">
-                    <img src="img/nina.jpg">
-                </div>
-                <div class="col-2">
-                    <p>As a busy working mother, juggling the work/life balance often felt stressful and
-                        overwhelming. Then, when my mother passed away, I could feel myself struggling even more.
-                        Looking for ways to take back control of my life, I discovered Mindfulness.
-                    </p>
-
-                    <p>After taking a Mindfulness course in 2014, I discovered a deep sense of calm and peace.
-                        As I learnt to calm my busy mind, I was able to focus and be more productive in my
-                        daily life. Learning and implementing the tools of Mindfulness reminded me to be
-                        compassionate with myself and others. I felt more confident to deal with what life
-                        threw at me.
-                    </p>
-
-                    <p>
-                        Then having decided to train as a Mindfulness teacher, I gained an Accredited
-                        Mindfulness Teacher qualification with Breathworks UK. The training took me even deeper
-                        into connecting with my inner strength, and learning important life skills to deal with
-                        life’s stresses and strains. I am passionate about sharing this with others,
-                        as they can make profound, positive changes in our lives.
-                    </p>
-
-                    <p>
-                        Over the years, I have seen many clients benefit from my Mindfulness courses, and they are now
-                        able
-                        to better deal with their stress and anxiety, increasing their wellbeing and quality of life.
-                    </p>
-                </div>
-            </div>
-
-        </div>
-    </a-section>
-    <hero-section
-            id="take-control"
-            data-height="25"
-            data-image="trees.jpg"
-    >
-        <p>Learn how to take control of your life.</p>
-
-    </hero-section>
-    <a-section
-            id="testimony"
-            data-menu-text="TESTIMONY"
-            style="background-color: aliceblue;"
-    >
-        <div class="container">
-            <slide-container
-                    data-speed="500"
-                    data-delay="5000"
-                    data-stop-on-hover="false"
-            >
-                <slide-pane class="slide">
-                    <h1>Very relaxed in a comfortable environment</h1>
-                    <p>
-                        I attended a mindfulness session and found it to be informative and helpful
-                        and also good fun. Nina has a very nice way about her and the coaching
-                        is very relaxed in a comfortable and safe environment.
-                    </p>
-                    <p class="cite">Laura Dowd</p>
-                    <x-stars></x-stars>
-                </slide-pane>
-                <slide-pane class="slide">
-                    <h1>Thoroughly enjoyable</h1>
-                    <p>
-                        I did an 8 week one-to-one with Nina and found it most useful.
-                        I practice Mindfulness regularly now in daily life. In ways, it has been
-                        life-changing, simply by making me appreciate the moments.
-                        Nina has a gentle smiley way to make the sessions thoroughly enjoyable.
-                    </p>
-                    <p class="cite">Bea Jung</p>
-                    <x-stars></x-stars>
-                </slide-pane>
-                <slide-pane class="slide">
-                    <h1>Tools for life</h1>
-                    <p>
-                        I feel these are potentially tools for life – big thank you Nina!
-                        This is my second attempt to learn mindfulness and has been a success.
-                        I use mindfulness practises every day now and would not be without them.
-                    </p>
-                    <p class="cite">Bridget Bandura</p>
-                    <x-stars></x-stars>
-                </slide-pane>
-                <slide-pane>
-                    <h1>Highly recommend</h1>
-                    <p>
-                        I went to Nina’s taster session on mindfulness and learnt
-                        some really useful techniques on relaxation. Would highly recommend.
-                    </p>
-                    <p class="cite">Vicky Charlotte Burn</p>
-                    <x-stars></x-stars>
-                </slide-pane>
-                <slide-pane>
-                    <h1>Re-focus and re-charge</h1>
-                    <p>
-                        I absolutely love Nina’s lunchtime mindfulness online sessions.
-                        I decided to join her online sessions on a Monday to force me take a
-                        break from my busy Monday work schedule!
-                    </p>
-                    <p>
-                        It helps me re-focus and re-charge.
-                    </p>
-                    <p>
-                        I feel energised for the rest of the afternoon.
-                    </p>
-                    <p>
-                        Thank you, Nina!!
-                    </p>
-                    <p class="cite">Ariane Eva Morin</p>
-                    <x-stars></x-stars>
-                </slide-pane>
-            </slide-container>
-        </div>
-    </a-section>
-    <a-section
-            id="contact"
-            data-menu-text="CONTACT"
-    >
-        <div class="container">
-            <div class="row-1">
-                <div class="col-1">
-                    <p class="title">General Enquiries</p>
-                    <p class="email"><a href="mailto:nxcolvin@gmail.com">nxcolvin@gmail.com</a></p>
-                    <p class="telephone"><a href="tel:07973829844">0797-382-9844</a></p>
-                </div>
-                <div class="col-2">
-                    <p class="title">Studio Address</p>
-                    <div class="address">
-                        <p>Inspired Hub</p>
-                        <p>3 Ashley Road</p>
-                        <p>Hampton</p>
-                        <p>TW12 2JA</p>
-                    </div>
-                </div>
-                <div class="col-3">
-                    <a href="https://www.facebook.com/mindfulness.stress.courses">
-                        <img src="img/Facebook_Logo_Primary.png" style="min-height: 16px; min-width: 16px; height:2em;">
-                    </a>
-                </div>
-            </div>
-        </div>
-    </a-section>
-
-    <a-section
-            id="copyright"
-    >
-        <div class="container">
-            <p>Copyright 2021-2025 Nina Colvin | Mindfully You </p>
-        </div>
-    </a-section>
-</page-content>
+<div
+        id="copyright"
+>
+    <div class="container">
+        <p>Copyright 2021-2025 Nina Colvin | Mindfully You </p>
+    </div>
+</div>
+</div>
 <script src="js/kokolex-js-browser.js"></script>
 </body>
 </html>
