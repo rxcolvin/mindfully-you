@@ -2,17 +2,14 @@
 
 
 nav-bar {
-    margin: 0;
-    padding: 0;
-    display: inline-flex;
-    height: 100px;
-    width: 100vw !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border-width: 0 !important;
+    width: 100% !important;
     bottom: auto !important;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    z-index: 999;
+    position: fixed !important;
+    top: 0 !important;
+    z-index: 999 !important;
 
     nav-bar-branding {
         display: block;
